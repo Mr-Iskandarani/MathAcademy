@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Grade 7 - Worksheet 1</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function checkAnswer(question, correctOption) {
+      const selected = document.querySelector(`input[name="${question}"]:checked`);
+      if (!selected) {
+        alert("Please select an answer!");
+        return;
+      }
+      if (selected.value === correctOption) {
+        alert("✅ Correct!");
+      } else {
+        alert("❌ Wrong, try again.");
+      }
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Grade 7 - Integers & Decimals</h1>
+  </header>
+
+  <main>
+    <!-- Exercise 1 -->
+    <section>
+      <h2>Exercise 1: Addition of Integers</h2>
+      <p>1) (-12) + (+20) = ?</p>
+      <label><input type="radio" name="ex1q1" value="A"> A) +8</label><br>
+      <label><input type="radio" name="ex1q1" value="B"> B) -32</label><br>
+      <label><input type="radio" name="ex1q1" value="C"> C) +32</label><br>
+      <button onclick="checkAnswer('ex1q1','A')">Check Answer</button>
+    </section>
+
+    <!-- Exercise 2 -->
+    <section>
+      <h2>Exercise 2: Subtraction of Integers</h2>
+      <p>1) (+25) - (+50) = ?</p>
+      <label><input type="radio" name="ex2q1" value="A"> A) -25</label><br>
+      <label><input type="radio" name="ex2q1" value="B"> B) +25</label><br>
+      <label><input type="radio" name="ex2q1" value="C"> C) -75</label><br>
+      <button onclick="checkAnswer('ex2q1','A')">Check Answer</button>
+    </section>
+
+    <!-- Exercise 3 -->
+    <section>
+      <h2>Exercise 3: Mixed Operations</h2>
+      <p>1) 50 - 90 = ?</p>
+      <label><input type="radio" name="ex3q1" value="A"> A) -40</label><br>
+      <label><input type="radio" name="ex3q1" value="B"> B) +40</label><br>
+      <label><input type="radio" name="ex3q1" value="C"> C) -140</label><br>
+      <button onclick="checkAnswer('ex3q1','A')">Check Answer</button>
+    </section>
+
+    <!-- Exercise 5 -->
+    <section>
+      <h2>Exercise 5: Multiplication of Integers</h2>
+      <p>1) (-5) × (+30) = ?</p>
+      <label><input type="radio" name="ex5q1" value="A"> A) -150</label><br>
+      <label><input type="radio" name="ex5q1" value="B"> B) +150</label><br>
+      <label><input type="radio" name="ex5q1" value="C"> C) -35</label><br>
+      <button onclick="checkAnswer('ex5q1','A')">Check Answer</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Math Academy</p>
+  </footer>
+</body>
+</html>
+<main>
+  <h2>Worksheet 1: Integers and Decimals</h2>
+
+  <section>
+    <h3>Exercise 1</h3>
+    <pre>
+1) (-12) + (+20) =
+2) (-25) + (-15) =
+3) 60 + (-60) =
+4) 100 + (-99) =
+5) (-50) + (-50) =
+6) 10 + (-20) =
+7) (-40) + 60 =
+8) (-12) + (-12) + (-12) =
+9) (-8) + 20 + (-10) =
+10) 50 + (-25) + (-15) =
+    </pre>
+  </section>
+
+  <section>
+    <h3>Exercise 2</h3>
+    <pre>
+1) (+25) - (+50) =
+2) (-40) - (+40) =
+3) (-30) - (-70) =
+4) (-45) - (-90) =
+5) (-12) - (+8) + (-13) =
+6) 12 - (-3) - (-17) =
+7) -40 - (-60) + (-10) =
+8) 81 + (-90) - (-70) =
+...
+    </pre>
+  </section>
+
+  <section>
+    <h3>Exercise 3</h3>
+    <pre>
+1) 50 - 90 =
+2) -45 + 60 =
+3) -60 - 40 =
+4) 150 - 200 =
+...
+    </pre>
+  </section>
+
+  <section>
+    <h3>Exercise 5</h3>
+    <pre>
+1) (-5) × (+30) =
+2) (+25) × (-4) =
+3) (-12) × (-5) =
+...
+    </pre>
+  </section>
+</main>
