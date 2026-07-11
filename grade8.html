@@ -1,199 +1,282 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Grade 8 MCQ - Powers</title>
+<div class="section">
+  <h2>📘 Chapter 1: Powers</h2>
+
+  <!-- أزرار التبويبات -->
+  <div class="tab">
+    <button class="tablinks" onclick="openTab(event, 'powers-summary')">📄 Summary</button>
+    <button class="tablinks" onclick="openTab(event, 'powers-exercises')">📝 Exercises</button>
+  </div>
+
+  <!-- محتوى Summary -->
+  <div id="powers-summary" class="tabcontent">
+    <h3>Summary</h3>
+    <p>
+      The power of a number shows how many times the number is multiplied by itself.  
+      Example: 2<sup>3</sup> = 2 × 2 × 2 = 8
+    </p>
+    <ul>
+      <li>a<sup>m</sup> × a<sup>n</sup> = a<sup>m+n</sup></li>
+      <li>a<sup>m</sup> ÷ a<sup>n</sup> = a<sup>m-n</sup></li>
+      <li>(a<sup>m</sup>)<sup>n</sup> = a<sup>m×n</sup></li>
+      <li>(ab)<sup>n</sup> = a<sup>n</sup> × b<sup>n</sup></li>
+      <li>a<sup>0</sup> = 1 (for a ≠ 0)</li>
+      <li>a<sup>-n</sup> = 1 / a<sup>n</sup></li>
+    </ul>
+  </div>
+
+  <!-- محتوى Exercises -->
+  <div id="powers-exercises" class="tabcontent">
+    <div class="section">
+  <h2> Exercises</h2>
+  <!-- 10 Solved Examples -->
+  <h3>1) Rules of powers</h3>
+   <h3> 10 solved examples</h3>
+  <p>1) 2<sup>3</sup> = 8</p>
+  <p>2) 3<sup>2</sup> = 9</p>
+  <p>3) 5<sup>3</sup> = 125</p>
+  <p>4) 10<sup>2</sup> = 100</p>
+  <p>5) 2<sup>3</sup> × 2<sup>2</sup> = 32</p>
+  <p>6) 6<sup>4</sup> ÷ 6<sup>2</sup> = 36</p>
+  <p>7) (3<sup>2</sup>)<sup>3</sup> = 729</p>
+  <p>8) (2 × 5)<sup>2</sup> = 100</p>
+  <p>9) 7<sup>0</sup> = 1</p>
+  <p>10) 4<sup>-2</sup> = 1/16</p>
+
+  <!-- 10 Practice Examples -->
+  <h3>10 Practice Examples</h3>
+
+  <p>1) Calculate 2<sup>5</sup>.</p>
+  <button onclick="document.getElementById('p1').style.display='block'">Reveal Answer</button>
+  <p id="p1" style="display:none;">Solution: 32</p>
+
+  <p>2) Simplify 3<sup>4</sup> ÷ 3<sup>2</sup>.</p>
+  <button onclick="document.getElementById('p2').style.display='block'">Reveal Answer</button>
+  <p id="p2" style="display:none;">Solution: 9</p>
+
+  <p>3) Simplify 5<sup>2</sup> × 5<sup>3</sup>.</p>
+  <button onclick="document.getElementById('p3').style.display='block'">Reveal Answer</button>
+  <p id="p3" style="display:none;">Solution: 3125</p>
+
+  <p>4) Simplify (2<sup>3</sup>)<sup>2</sup>.</p>
+  <button onclick="document.getElementById('p4').style.display='block'">Reveal Answer</button>
+  <p id="p4" style="display:none;">Solution: 64</p>
+
+  <p>5) Simplify (3 × 4)<sup>2</sup>.</p>
+  <button onclick="document.getElementById('p5').style.display='block'">Reveal Answer</button>
+  <p id="p5" style="display:none;">Solution: 144</p>
+
+  <p>6) Calculate 10<sup>3</sup>.</p>
+  <button onclick="document.getElementById('p6').style.display='block'">Reveal Answer</button>
+  <p id="p6" style="display:none;">Solution: 1000</p>
+
+  <p>7) Simplify 8<sup>0</sup>.</p>
+  <button onclick="document.getElementById('p7').style.display='block'">Reveal Answer</button>
+  <p id="p7" style="display:none;">Solution: 1</p>
+
+  <p>8) Simplify 4<sup>-1</sup>.</p>
+  <button onclick="document.getElementById('p8').style.display='block'">Reveal Answer</button>
+  <p id="p8" style="display:none;">Solution: 1/4</p>
+
+  <p>9) Simplify (5<sup>2</sup>)<sup>2</sup>.</p>
+  <button onclick="document.getElementById('p9').style.display='block'">Reveal Answer</button>
+  <p id="p9" style="display:none;">Solution: 625</p>
+
+  <p>10) Simplify 2<sup>3</sup> × 3<sup>2</sup>.</p>
+  <button onclick="document.getElementById('p10').style.display='block'">Reveal Answer</button>
+  <p id="p10" style="display:none;">Solution: 72</p>
+</div>
+<div class="section">
+  <h2>2) Writing as a Power of 2, 3 or 5</h2>
+
+  <!-- Rules -->
+  <h3>Rule</h3>
+  <p>
+    Some numbers can be expressed as powers of 2, 3, or 5.  
+    Example: 8 = 2<sup>3</sup>, 27 = 3<sup>3</sup>, 25 = 5<sup>2</sup>.
+  </p>
+
+  <!-- 10 Solved Examples -->
+  <h3>10 Solved Examples</h3>
+  <p>1) 4 = 2<sup>2</sup></p>
+  <p>2) 8 = 2<sup>3</sup></p>
+  <p>3) 16 = 2<sup>4</sup></p>
+  <p>4) 32 = 2<sup>5</sup></p>
+  <p>5) 9 = 3<sup>2</sup></p>
+  <p>6) 27 = 3<sup>3</sup></p>
+  <p>7) 81 = 3<sup>4</sup></p>
+  <p>8) 25 = 5<sup>2</sup></p>
+  <p>9) 125 = 5<sup>3</sup></p>
+  <p>10) 625 = 5<sup>4</sup></p>
+
+  <!-- 10 Practice Examples -->
+  <h3>10 Practice Examples</h3>
+
+  <p>1) Write 64 as a power of 2.</p>
+  <button onclick="document.getElementById('p1').style.display='block'">Reveal Answer</button>
+  <p id="p1" style="display:none;">64 = 2<sup>6</sup></p>
+
+  <p>2) Write
+  </div>
+  <div class="section">
+  <h2>3)Scientific Notation </h2>
+
+  <!-- تعريف -->
+  <h3>Definition</h3>
+  <p>
+    Scientific notation is a way of writing very large or very small numbers using powers of 10.  
+    Example: 4,500 = 4.5 × 10<sup>3</sup>
+  </p>
+
+  <!-- 10 أمثلة محلولة -->
+  <h3>10 Solved Examples</h3>
+  <p>1) 1200 = 1.2 × 10<sup>3</sup></p>
+  <p>2) 0.005 = 5 × 10<sup>-3</sup></p>
+  <p>3) 75,000 = 7.5 × 10<sup>4</sup></p>
+  <p>4) 0.00042 = 4.2 × 10<sup>-4</sup></p>
+  <p>5) 3,600,000 = 3.6 × 10<sup>6</sup></p>
+  <p>6) 0.09 = 9 × 10<sup>-2</sup></p>
+  <p>7) 42,000 = 4.2 × 10<sup>4</sup></p>
+  <p>8) 0.0000008 = 8 × 10<sup>-7</sup></p>
+  <p>9) 5,000 = 5 × 10<sup>3</sup></p>
+  <p>10) 0.00031 = 3.1 × 10<sup>-4</sup></p>
+
+  <!-- 10 أمثلة تدريبية -->
+  <h3>10 Practice Examples</h3>
+
+  <p>1) Write 45,000 in scientific notation.</p>
+  <button onclick="document.getElementById('p1').style.display='block'">Reveal Answer</button>
+  <p id="p1" style="display:none;">45,000 = 4.5 × 10<sup>4</sup></p>
+
+  <p>2) Write 0.00056 in scientific notation.</p>
+  <button onclick="document.getElementById('p2').style.display='block'">Reveal Answer</button>
+  <p id="p2" style="display:none;">0.00056 = 5.6 × 10<sup>-4</sup></p>
+
+  <p>3) Write 7,200,000 in scientific notation.</p>
+  <button onclick="document.getElementById('p3').style.display='block'">Reveal Answer</button>
+  <p id="p3" style="display:none;">7,200,000 = 7.2 × 10<sup>6</sup></p>
+
+  <p>4) Write 0.00000092 in scientific notation.</p>
+  <button onclick="document.getElementById('p4').style.display='block'">Reveal Answer</button>
+  <p id="p4" style="display:none;">0.00000092 = 9.2 × 10<sup>-7</sup></p>
+
+  <p>5) Write 81,000 in scientific notation.</p>
+
+</div>
+<div class="section">
+  <h2>4)Simplify Complex Expressions - Exercises</h2>
+
+  <!-- تعريف -->
+  <h3>Definition</h3>
+  <p>
+    To simplify complex expressions, apply the rules of powers, combine like terms, and reduce fractions when possible.
+  </p>
+
+  <!-- CSS لتنسيق الكسر -->
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 30px;
-      background-color: #f9f9f9;
+    .fraction {
+      display: inline-block;
+      text-align: center;
+      vertical-align: middle;
     }
-    h1 {
-      color: #0074D9;
-    }
-    .question {
-      margin: 20px 0;
-      padding: 10px;
-      background-color: #fff;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-    .options label {
+    .fraction .top {
+      border-bottom: 1px solid #000;
       display: block;
-      margin: 5px 0;
+      padding: 0 5px;
+    }
+    .fraction .bottom {
+      display: block;
+      padding: 0 5px;
     }
   </style>
-</head>
-<body>
-  <h1>Grade 8 - Powers MCQ</h1>
 
-  <div class="question">
-    <p>Q1. 2^3 = ?</p>
-    <div class="options">
-      <label><input type="radio" name="q1"> a) 6</label>
-      <label><input type="radio" name="q1"> b) 8</label>
-      <label><input type="radio" name="q1"> c) 9</label>
-      <label><input type="radio" name="q1"> d) 12</label>
-    </div>
-  </div>
+  <!-- 10 أمثلة محلولة -->
+  <h3>10 Solved Examples</h3>
+  <p>1) Simplify: <span class="fraction"><span class="top">2<sup>3</sup></span><span class="bottom">2<sup>4</sup></span></span> = 2<sup>-1</sup> = 1/2</p>
+  <p>2) Simplify: (3<sup>2</sup>)<sup>3</sup> = 3<sup>6</sup> = 729</p>
+  <p>3) Simplify: <span class="fraction"><span class="top">5<sup>4</sup></span><span class="bottom">5<sup>2</sup></span></span> = 5<sup>2</sup> = 25</p>
+  <p>4) Simplify: (2 × 3)<sup>2</sup> = 36</p>
+  <p>5) Simplify: <span class="fraction"><span class="top">4<sup>3</sup> × 4<sup>2</sup></span><span class="bottom">4<sup>4</sup></span></span> = 4</p>
+  <p>6) Simplify: <span class="fraction"><span class="top">x<sup>2</sup> × x<sup>3</sup></span><span class="bottom">x<sup>4</sup></span></span> = x</p>
+  <p>7) Simplify: (y<sup>3</sup>)<sup>2</sup> = y<sup>6</sup></p>
+  <p>8) Simplify: (a<sup>2</sup> × b<sup>2</sup>)<sup>2</sup> = a<sup>4</sup> × b<sup>4</sup></p>
+  <p>9) Simplify: <span class="fraction"><span class="top">2<sup>5</sup></span><span class="bottom">2<sup>3</sup></span></span> × 2<sup>2</sup> = 16</p>
+  <p>10) Simplify: <span class="fraction"><span class="top">m<sup>0</sup> × n<sup>3</sup></span><span class="bottom">n<sup>2</sup></span></span> = n</p>
 
-  <div class="question">
-    <p>Q2. 5^2 = ?</p>
-    <div class="options">
-      <label><input type="radio" name="q2"> a) 10</label>
-      <label><input type="radio" name="q2"> b) 15</label>
-      <label><input type="radio" name="q2"> c) 25</label>
-      <label><input type="radio" name="q2"> d) 50</label>
-    </div>
-  </div>
+  <!-- 10 أمثلة تدريبية -->
+  <h3>10 Practice Examples</h3>
 
-  <div class="question">
-    <p>Q3. 10^0 = ?</p>
-    <div class="options">
-      <label><input type="radio" name="q3"> a) 0</label>
-      <label><input type="radio" name="q3"> b) 1</label>
-      <label><input type="radio" name="q3"> c) 10</label>
-      <label><input type="radio" name="q3"> d) Undefined</label>
-    </div>
-  </div>
+  <p>1) Simplify: <span class="fraction"><span class="top">3<sup>4</sup></span><span class="bottom">3<sup>2</sup></span></span>.</p>
+  <button onclick="document.getElementById('p1').style.display='block'">Reveal Answer</button>
+  <p id="p1" style="display:none;">= 3<sup>2</sup> = 9</p>
 
-  <div class="question">
-    <p>Q4. 3^4 = ?</p>
-    <div class="options">
-      <label><input type="radio" name="q4"> a) 12</label>
-      <label><input type="radio" name="q4"> b) 27</label>
-      <label><input type="radio" name="q4"> c) 81</label>
-      <label><input type="radio" name="q4"> d) 64</label>
-    </div>
-  </div>
+  <p>2) Simplify: (2<sup>2</sup>)<sup>3</sup>.</p>
+  <button onclick="document.getElementById('p2').style.display='block'">Reveal Answer</button>
+  <p id="p2" style="display:none;">= 2<sup>6</sup> = 64</p>
 
-  <div class="question">
-    <p>Q5. (-2)^3 = ?</p>
-    <div class="options">
-      <label><input type="radio" name="q5"> a) -6</label>
-      <label><input type="radio" name="q5"> b) -8</label>
-      <label><input type="radio" name="q5"> c) 8</label>
-      <label><input type="radio" name="q5"> d) 4</label>
-    </div>
-  </div>
+  <p>3) Simplify: <span class="fraction"><span class="top">5<sup>3</sup></span><span class="bottom">5<sup>1</sup></span></span>.</p>
+  <button onclick="document.getElementById('p3').style.display='block'">Reveal Answer</button>
+  <p id="p3" style="display:none;">= 5<sup>2</sup> = 25</p>
 
-  <div class="question">
-    <p>Q6. (4^2) × (4^3) = ?</p>
-    <div class="options">
-      <label><input type="radio" name="q6"> a) 4^5</label>
-      <label><input type="radio" name="q6"> b) 4^6</label>
-      <label><input type="radio" name="q6"> c) 4^8</label>
-      <label><input type="radio" name="q6"> d) 4^10</label>
-    </div>
-  </div>
+  <p>4) Simplify: <span class="fraction"><span class="top">x<sup>4</sup> × x<sup>2</sup></span><span class="bottom">x<sup>3</sup></span></span>.</p>
+  <button onclick="document.getElementById('p4').style.display='block'">Reveal Answer</button>
+  <p id="p4" style="display:none;">= x<sup>3</sup></p>
 
-  <div class="question">
-    <p>Q7. (7^3) ÷ (7^2) = ?</p>
-    <div class="options">
-      <label><input type="radio" name="q7"> a) 7</label>
-      <label><input type="radio" name="q7"> b) 49</label>
-      <label><input type="radio" name="q7"> c) 343</label>
-      <label><input type="radio" name="q7"> d) 21</label>
-    </div>
-  </div>
+  <p>5) Simplify: (y<sup>2</sup>)<sup>3</sup>.</p>
+  <button onclick="document.getElementById('p5').style.display='block'">Reveal Answer</button>
+  <p id="p5" style="display:none;">= y<sup>6</sup></p>
 
-  <div class="question">
-    <p>Q8. (2^5)^2 = ?</p>
-    <div class="options">
-      <label><input type="radio" name="q8"> a) 2^10</label>
-      <label><input type="radio" name="q8"> b) 2^7</label>
-      <label><input type="radio" name="q8"> c) 2^25</label>
-      <label><input type="radio" name="q8"> d) 2^15</label>
-    </div>
-  </div>
+  <p>6) Simplify: (2 × 5)<sup>3</sup>.</p>
+  <button onclick="document.getElementById('p6').style.display='block'">Reveal Answer</button>
+  <p id="p6" style="display:none;">= 1000</p>
 
-  <div class="question">
-    <p>Q9. 9^-1 = ?</p>
-    <div class="options">
-      <label><input type="radio" name="q9"> a) 9</label>
-      <label><input type="radio" name="q9"> b) 1/9</label>
-      <label><input type="radio" name="q9"> c) -9</label>
-      <label><input type="radio" name="q9"> d) 0</label>
-    </div>
-  </div>
+  <p>7) Simplify: <span class="fraction"><span class="top">a<sup>3</sup> × b<sup>2</sup></span><span class="bottom">a<sup>2</sup></span></span>.</p>
+  <button onclick="document.getElementById('p7').style.display='block'">Reveal Answer</button>
+  <p id="p7" style="display:none;">= a × b<sup>2</sup></p>
 
-  <div class="question">
-    <p>Q10. (3^2) × (5^2) = ?</p>
-    <div class="options">
-      <label><input type="radio" name="q10"> a) 15^2</label>
-      <label><input type="radio" name="q10"> b) 8^2</label>
-      <label><input type="radio" name="q10"> c) 30^2</label>
-      <label><input type="radio" name="q10"> d) 25^2</label>
-    </div>
-  </div>
+  <p>8) Simplify: <span class="fraction"><span class="top">m<sup>2</sup> × m<sup>3</sup></span><span class="bottom">m<sup>4</sup></span></span>.</p>
+  <button onclick="document.getElementById('p8').style.display='block'">Reveal Answer</button>
+  <p id="p8" style="display:none;">= m</p>
 
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Grade 8 Worksheet - Algebraic Expressions</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 30px;
-      background-color: #f9f9f9;
-    }
-    h1 {
-      color: #0074D9;
-    }
-    pre {
-      background-color: #fff;
-      padding: 15px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      white-space: pre-wrap;
-      font-size: 16px;
-    }
-  </style>
-</head>
-<body>
-  <h1>Grade 8 - Algebraic Expressions (Expand and Reduce)</h1>
+  <p>9) Simplify: <span class="fraction"><span class="top">4<sup>2</sup> × 4<sup>3</sup></span><span class="bottom">4<sup>4</sup></span></span>.</p>
+  <button onclick="document.getElementById('p9').style.display='block'">Reveal Answer</button>
+  <p id="p9" style="display:none;">= 4</p>
 
-  <pre>
-Addition and subtraction:
-- To add or subtract they must have the "same terms".
-Examples:
-2x + 3x = 5x
-5x² - x² = 4x²
-8xy + 3xy = 11xy
-...
+  <p>10) Simplify: <span class="fraction"><span class="top">p<sup>0</sup> × q<sup>5</sup></span><span class="bottom">
+</div>
 
-Multiplication and division:
-- They must have "like terms".
-Examples:
-x × x² = x³
-(2x²)(3x³) = 6x⁵
-y³ × y⁵ = y⁸
-...
+<!-- CSS للتبويبات -->
+<style>
+.tab { overflow: hidden; margin-bottom: 10px; }
+.tab button {
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+.tab button:hover { background-color: #0b7dda; }
+.tabcontent {
+  display: none;
+  padding: 10px;
+  border-top: none;
+  background-color: #f9f9f9;
+}
+</style>
 
-Expanding and reducing:
-Remarkable identities:
-(a + b)² = a² + 2ab + b²
-(a - b)² = a² - 2ab + b²
-(a + b)(a - b) = a² - b²
-
-Examples:
-(x + 1)² = x² + 2x + 1
-(2x - 3)² = 4x² - 12x + 9
-(x + 3)(x - 3) = x² - 9
-...
-
-Distribution:
-Multiplication is distributive over addition or subtraction.
-Examples:
-3x(x + 2) = 3x² + 6x
-2x(x - 3) = 2x² - 6x
-(x + 1)(x - 2) = x² - x - 2
-...
-  </pre>
-
-</body>
-</html>
+<!-- JavaScript للتحكم بالتبويبات -->
+<script>
+function openTab(evt, tabName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
