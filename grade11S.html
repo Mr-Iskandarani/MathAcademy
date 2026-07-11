@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Grade 11 Scientific - Quadratic Equations</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+      background-color: #f9f9f9;
+    }
+    h1 {
+      color: #0074D9;
+    }
+    .exercise {
+      background-color: #fff;
+      padding: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+    .solution {
+      margin-top: 10px;
+      color: #333;
+      font-style: italic;
+    }
+    pre {
+      background-color: #eee;
+      padding: 10px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Grade 11 Scientific - Quadratic Equations</h1>
+
+  <h2>📘 Summary</h2>
+  <p>
+    A quadratic equation has the form <b>ax² + bx + c = 0</b>.  
+    To solve it, we can use:
+  </p>
+  <ul>
+    <li><b>Factorization</b> if possible.</li>
+    <li><b>Quadratic formula:</b> 
+      <pre>x = [-b ± √(b² - 4ac)] / 2a</pre>
+    </li>
+    <li><b>Completing the square</b> method.</li>
+  </ul>
+
+  <h2>📝 Exercises with Solutions</h2>
+
+  <div class="exercise">
+    <p>1) Solve: 2x² - 2x = -1/2</p>
+    <div class="solution">
+      2x² - 2x + 1/2 = 0 → Multiply by 2: 4x² - 4x + 1 = 0 → (2x - 1)² = 0 → x = 1/2
+    </div>
+  </div>
+
+  <div class="exercise">
+    <p>2) Solve: (x² - 9x + 8) / (5x² - 6x + 1) = -2</p>
+    <div class="solution">
+      Cross multiply: x² - 9x + 8 = -2(5x² - 6x + 1) → x² - 9x + 8 = -10x² + 12x - 2 →  
+      11x² - 21x + 10 = 0 → Δ = 21² - 4(11)(10) = 441 - 440 = 1 →  
+      x = (21 ± 1)/22 → x = 1 or x = 10/11
+    </div>
+  </div>
+
+  <div class="exercise">
+    <p>3) Solve: x + √(2x + 1) = 1</p>
+    <div class="solution">
+      √(2x + 1) = 1 - x → Square both sides: 2x + 1 = (1 - x)² = 1 - 2x + x² →  
+      x² - 4x = 0 → x(x - 4) = 0 → x = 0 or x = 4 → Check validity:  
+      For x=0 → √1 = 1 → OK. For x=4 → √9 = 3 → LHS=7 ≠ 1 → reject.  
+      Final solution: x = 0
+    </div>
+  </div>
+
+  <div class="exercise">
+    <p>4) Solve: 9x⁴ + 30x² + 25 = 0</p>
+    <div class="solution">
+      Let y = x² → 9y² + 30y + 25 = 0 → Δ = 30² - 4(9)(25) = 900 - 900 = 0 →  
+      y = -30 / (2*9) = -30/18 = -5/3 → No real solution since y = x² ≥ 0.  
+      Final solution: No real roots.
+    </div>
+  </div>
+
+  <div class="exercise">
+    <p>5) Solve: x + 5/x = 2/3</p>
+    <div class="solution">
+      Multiply both sides by x: x² + 5 = (2/3)x → 3x² + 15 = 2x →  
+      3x² - 2x + 15 = 0 → Δ = (-2)² - 4(3)(15) = 4 - 180 = -176 < 0 →  
+      No real solution.
+    </div>
+  </div>
+
+  <div class="exercise">
+    <p>6) Solve: 12x² - 6|x| - 1 = 0</p>
+    <div class="solution">
+      Case 1: x ≥ 0 → 12x² - 6x - 1 = 0 → Δ = 36 + 48 = 84 →  
+      x = (6 ± √84)/24 = (6 ± 2√21)/24 = (3 ± √21)/12 → positive solutions.  
+      Case 2: x < 0 → 12x² + 6x - 1 = 0 → Δ = 36 + 48 = 84 →  
+      x = (-6 ± √84)/24 = (-6 ± 2√21)/24 = (-3 ± √21)/12 → negative solutions.  
+      Final solutions: x = (3 ± √21)/12 and x = (-3 ± √21)/12
+    </div>
+  </div>
+
+  <div class="exercise">
+    <p>7) Solve: 2x - 3√x + 1 = 0</p>
+    <div class="solution">
+      Let y = √x → 2y² - 3y + 1 = 0 → Δ = 9 - 8 = 1 →  
+      y = (3 ± 1)/4 → y = 1 or y = 1/2 →  
+      x = y² → x = 1 or x = 1/4
+    </div>
+  </div>
+
+</body>
+</html>

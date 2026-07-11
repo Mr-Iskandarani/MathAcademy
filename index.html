@@ -2,62 +2,110 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Math Academy</title>
+  <title>Be Genius in Mathematics</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      background-color: #f9f9f9;
+      font-family: 'Segoe UI', Arial, sans-serif;
       margin: 0;
-      padding: 0;
+      background: linear-gradient(to right, #0074D9, #7FDBFF);
+      color: #333;
     }
     header {
+      background-color: #001f3f;
+      color: white;
+      padding: 40px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 40px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    header p {
+      margin-top: 10px;
+      font-size: 22px;
+      font-style: italic;
+      color: #7FDBFF;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 30px;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      margin: 15px;
+      width: 250px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    .card h2 {
       background-color: #0074D9;
       color: white;
+      padding: 15px;
+      margin: 0;
+      border-radius: 10px 10px 0 0;
+    }
+    .card a {
+      display: block;
       padding: 20px;
-    }
-    main {
-      margin: 30px;
-    }
-    a {
-      display: inline-block;
-      margin: 10px;
-      padding: 10px 20px;
-      background-color: #0074D9;
-      color: white;
       text-decoration: none;
-      border-radius: 5px;
+      color: #0074D9;
+      font-weight: bold;
     }
-    a:hover {
-      background-color: #005fa3;
-    }
-    footer {
-      margin-top: 40px;
-      padding: 10px;
-      background-color: #eee;
+    .card a:hover {
+      color: #001f3f;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Welcome to Math Academy</h1>
-  </header>
 
-  <main>
-    <h2>Select your grade:</h2>
-    <a href="grade7.html">Grade 7</a>
-    <a href="grade8.html">Grade 8</a>
-    <a href="grade9.html">Grade 9</a>
-    <a href="grade10.html">Grade 10</a>
-    <a href="grade11S.html">Grade 11 S</a>
-    <a href="grade11SE.html">Grade 11 SE</a>
-    <a href="grade12LS.html">Grade 12 LS</a>
-    <a href="grade12SE.html">Grade 12 SE</a>
-  </main>
+<header>
+  <h1>Be Genius in Mathematics</h1>
+  <p>with Mohieddeen Iskandarani</p>
+</header>
 
-  <footer>
-    <p>© 2026 Math Academy</p>
-  </footer>
+<div class="container">
+  <div class="card">
+    <h2>Grade 7</h2>
+    <a href="grade7.html">Open Lessons</a>
+  </div>
+  <div class="card">
+    <h2>Grade 8</h2>
+    <a href="grade8.html">Open Lessons</a>
+  </div>
+  <div class="card">
+    <h2>Grade 9</h2>
+    <a href="grade9.html">Open Lessons</a>
+  </div>
+  <div class="card">
+    <h2>Grade 10</h2>
+    <a href="grade10.html">Open Lessons</a>
+  </div>
+  <div class="card">
+    <h2>Grade 11 Scientific</h2>
+    <a href="grade11S.html">Open Lessons</a>
+  </div>
+  <div class="card">
+    <h2>Grade 11 Socio-Economic</h2>
+    <a href="grade11SE.html">Open Lessons</a>
+  </div>
+  <div class="card">
+    <h2>Grade 12 Life Sciences</h2>
+    <a href="grade12LS.html">Open Lessons</a>
+  </div>
+  <div class="card">
+    <h2>Grade 12 Socio-Economic</h2>
+    <a href="grade12SE.html">Open Lessons</a>
+  </div>
+</div>
+
 </body>
 </html>
-<a href="grade9.html">Grade 9</a>
