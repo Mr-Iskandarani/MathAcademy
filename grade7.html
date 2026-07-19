@@ -353,3 +353,794 @@ function reveal(btn) {
 
 </body>
 </html>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Grade 7 Math</title>
+  <!-- MathJax مكتبة لعرض الكسور والمعادلات -->
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+  <style>
+    .icon-button {
+      background-color: #2196F3;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      margin: 5px;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+    .icon-button:hover {
+      background-color: #0b7dda;
+    }
+    .content {
+      padding: 10px;
+      background-color: #f9f9f9;
+      margin-top: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    .reveal-btn {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+      margin: 5px;
+      border-radius: 5px;
+      font-size: 12px;
+    }
+    .reveal-btn:hover {
+      background-color: #3e8e41;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Chapter 2: Fractions -->
+<div class="chapter-card" style="text-align:center;">
+  <h2>📘 Chapter 2: Fractions</h2>
+  <div class="tab">
+    <button class="icon-button" onclick="showContent('fractions-summary')">📄 Summary</button>
+    <button class="icon-button" onclick="showContent('fractions-exercises')">📝 Exercises</button>
+  </div>
+</div>
+
+<div id="fractions-summary" class="content" style="display:none;">
+  <h2>Lesson Summary</h2>
+  <p><b>Addition:</b> Make denominators equal, then add numerators.</p>
+  <p><b>Subtraction:</b> Same as addition, but subtract numerators.</p>
+  <p><b>Multiplication:</b> Multiply numerators and denominators, then simplify.</p>
+  <p><b>Division:</b> Multiply the first fraction by the reciprocal of the second.</p>
+</div>
+
+<div id="fractions-exercises" class="content" style="display:none;">
+  <h2>Exercises</h2>
+
+  <!-- Part 1: Addition -->
+  <h3>Part 1: Addition of Fractions</h3>
+
+  <h4>10 Solved Examples</h4>
+  <p>
+
+\[\frac{1}{2} + \frac{1}{3} = \frac{5}{6}\]
+
+</p>
+  <p>
+
+\[\frac{3}{4} + \frac{2}{5} = \frac{23}{20}\]
+
+</p>
+  <p>
+
+\[\frac{5}{6} + \frac{1}{6} = 1\]
+
+</p>
+  <p>
+
+\[\frac{2}{3} + \frac{1}{9} = 1\]
+
+</p>
+  <p>
+
+\[\frac{7}{8} + \frac{1}{8} = 1\]
+
+</p>
+  <p>
+
+\[\frac{4}{5} + \frac{2}{3} = \frac{22}{15}\]
+
+</p>
+  <p>
+
+\[\frac{1}{10} + \frac{3}{5} = \frac{7}{10}\]
+
+</p>
+  <p>
+
+\[\frac{9}{12} + \frac{1}{4} = 1\]
+
+</p>
+  <p>
+
+\[\frac{2}{7} + \frac{3}{14} = \frac{1}{2}\]
+
+</p>
+  <p>
+
+\[\frac{5}{9} + \frac{2}{3} = \frac{11}{9}\]
+
+</p>
+
+  <h4>10 Practice Examples</h4>
+  <p>
+
+\[\frac{1}{4} + \frac{1}{2}\]
+
+ 
+    <button class="reveal-btn" onclick="reveal(this)">Reveal</button>
+    <span class="answer" style="display:none;">
+
+\[\frac{3}{4}\]
+
+</span>
+  </p>
+  <p>
+
+\[\frac{2}{5} + \frac{3}{10}\]
+
+ 
+    <button class="reveal-btn" onclick="reveal(this)">Reveal</button>
+    <span class="answer" style="display:none;">
+
+\[\frac{7}{10}\]
+
+</span>
+  </p>
+  <p>
+
+\[\frac{3}{8} + \frac{1}{4}\]
+
+ 
+    <button class="reveal-btn" onclick="reveal(this)">Reveal</button>
+    <span class="answer" style="display:none;">
+
+\[\frac{5}{8}\]
+
+</span>
+  </p>
+  <p>
+
+\[\frac{2}{3} + \frac{1}{6}\]
+
+ 
+    <button class="reveal-btn" onclick="reveal(this)">Reveal</button>
+    <span class="answer" style="display:none;">
+
+\[\frac{5}{6}\]
+
+</span>
+  </p>
+  <p>
+
+\[\frac{7}{10} + \frac{1}{5}\]
+
+ 
+    <button class="reveal-btn" onclick="reveal(this)">Reveal</button>
+    <span class="answer" style="display:none;">
+
+\[\frac{9}{10}\]
+
+</span>
+  </p>
+  <p>
+
+\[\frac{3}{7} + \frac{2}{7}\]
+
+ 
+    <button class="reveal-btn" onclick="reveal(this)">Reveal</button>
+    <span class="answer" style="display:none;">
+
+\[\frac{5}{7}\]
+
+</span>
+  </p>
+  <p>
+
+\[\frac{4}{9} + \frac{2}{3}\]
+
+ 
+    <button class="reveal-btn" onclick="reveal(this)">Reveal</button>
+    <span class="answer" style="display:none;">
+
+\[\frac{10}{9}\]
+
+</span>
+  </p>
+  <p>
+
+\[\frac{1}{6} + \frac{5}{12}\]
+
+ 
+    <button class="reveal-btn" onclick="reveal(this)">Reveal</button>
+    <span class="answer" style="display:none;">
+
+\[\frac{7}{12}\]
+
+</span>
+  </p>
+  <p>
+
+\[\frac{2}{11} + \frac{3}{11}\]
+
+ 
+    <button class="reveal-btn" onclick="reveal(this)">Reveal</button>
+    <span class="answer" style="display:none;">
+
+\[\frac{5}{11}\]
+
+</span>
+  </p>
+  <p>
+
+\[\frac{5}{8} + \frac{1}{16}\]
+
+ 
+    <button class="reveal-btn" onclick="reveal(this)">Reveal</button>
+    <span class="answer" style="display:none;">
+
+\[\frac{11}{16}\]
+
+</span>
+  </p>
+    <!-- Part 2: Subtraction -->
+  <h3>Part 2: Subtraction of Fractions</h3>
+
+  <h4>10 Solved Examples</h4>
+  <p>
+
+\[\frac{3}{4} - \frac{1}{2} = \frac{1}{4}\]
+
+</p>
+  <p>
+
+\[\frac{5}{6} - \frac{1}{3} = \frac{1}{2}\]
+
+</p>
+  <p>
+
+\[\frac{7}{8} - \frac{3}{8} = \frac{1}{2}\]
+
+</p>
+  <p>
+
+\[\frac{9}{10} - \frac{2}{5} = \frac{1}{2}\]
+
+</p>
+  <p>
+
+\[\frac{11}{12} - \frac{5}{12} = \frac{1}{2}\]
+
+</p>
+  <p>
+
+\[\frac{2}{3} - \frac{1}{6} = \frac{1}{2}\]
+
+</p>
+  <p>
+
+\[\frac{4}{5} - \frac{2}{5} = \frac{2}{5}\]
+
+</p>
+  <p>
+
+\[\frac{7}{9} - \frac{1}{3} = \frac{4}{9}\]
+
+</p>
+  <p>
+
+\[\frac{5}{7} - \frac{2}{7} = \frac{3}{7}\]
+
+</p>
+  <p>
+
+\[\frac{3}{10} - \frac{1}{5} = \frac{1}{10}\]
+
+</p>
+
+  <h4>10 Practice Examples</h4>
+  <p>
+
+\[\frac{5}{6} - \frac{1}{2}\]
+
+ 
+    <button class="reveal-btn" onclick="reveal(this)">Reveal</button>
+    <span class="answer" style="display:none;">
+
+\[\frac{1}{3}\]
+
+</span>
+  </p>
+  <p>
+
+\[\frac{7}{8} - \frac{1}{4}\]
+
+ 
+    <button class="reveal-btn" onclick="reveal(this)">Reveal</button>
+    <span class="answer" style="display:none;">
+
+\[\frac{5}{8}\]
+
+</span>
+  </p>
+  <p>
+
+\[\frac{9}{12} - \frac{1}{6}\]
+
+ 
+    <button class="reveal-btn" onclick="reveal(this)">Reveal</button>
+    <span class="answer" style="display:none;">
+
+\[\frac{7}{12}\]
+
+</span>
+  </p>
+  <p>
+
+\[\frac{3}{5} - \frac{1}{10}\]
+
+ 
+    <button class="reveal-btn" onclick="reveal(this)">Reveal</button>
+    <span class="answer" style="display:none;">
+
+\[\frac{1}{2}\]
+
+</span>
+  </p>
+  <p>
+
+\[\frac{4}{9} - \frac{1}{3}\]
+
+ 
+    <button class="reveal-btn" onclick="reveal(this)">Reveal</button>
+    <span class="answer" style="display:none;">
+
+\[\frac{1}{9}\]
+
+</span>
+  </p>
+  <p>
+
+\[\frac{7}{10} - \frac{2}{5}\]
+
+ 
+    <button class="reveal-btn" onclick="reveal(this)">Reveal</button>
+    <span class="answer" style="display:none;">
+
+\[\frac{3}{10}\]
+
+</span>
+  </p>
+  <p>
+
+\[\frac{5}{8} - \frac{3}{16}\]
+
+ 
+    <button class="reveal-btn" onclick="reveal(this)">Reveal</button>
+    <span class="answer" style="display:none;">
+
+\[\frac{7}{16}\]
+
+</span>
+  </p>
+  <p>
+
+\[\frac{2}{7} - \frac{1}{14}\]
+
+ 
+    <button class="reveal-btn" onclick="reveal(this)">Reveal</button>
+    <span class="answer" style="display:none;">
+
+\[\frac{3}{14}\]
+
+</span>
+  </p>
+  <p>
+
+\[\frac{3}{11} - \frac{1}{11}\]
+
+ 
+    <button class="reveal-btn" onclick="reveal(this)">Reveal</button>
+    <span class="answer" style="display:none;">
+
+\[\frac{2}{11}\]
+
+</span>
+  </p>
+  <p>
+
+\[\frac{6}{15} - \frac{2}{15}\]
+
+ 
+    <button class="reveal-btn" onclick="reveal(this)">Reveal</button>
+    <span class="answer" style="display:none;">
+
+\[\frac{4}{15}\]
+
+</span>
+  </p>
+  <!-- Part 3: Multiplication -->
+  <h3>Part 3: Multiplication of Fractions</h3>
+
+  <h4>10 Solved Examples</h4>
+  <p>
+
+\[\frac{1}{2} \times \frac{1}{3} = \frac{1}{6}\]
+
+</p>
+  <p>
+
+\[\frac{2}{5} \times \frac{3}{4} = \frac{6}{20} = \frac{3}{10}\]
+
+</p>
+  <p>
+
+\[\frac{5}{6} \times \frac{2}{3} = \frac{10}{18} = \frac{5}{9}\]
+
+</p>
+  <p>
+
+\[\frac{7}{8} \times \frac{4}{7} = \frac{28}{56} = \frac{1}{2}\]
+
+</p>
+  <p>
+
+\[\frac{9}{10} \times \frac{2}{5} = \frac{18}{50} = \frac{9}{25}\]
+
+</p>
+  <p>
+
+\[\frac{3}{7} \times \frac{7}{9} = \frac{21}{63} = \frac{1}{3}\]
+
+</p>
+  <p>
+
+\[\frac{4}{5} \times \frac{5}{6} = \frac{20}{30} = \frac{2}{3}\]
+
+</p>
+  <p>
+
+\[\frac{2}{3} \times \frac{3}{8} = \frac{6}{24} = \frac{1}{4}\]
+
+</p>
+  <p>
+
+\[\frac{5}{12} \times \frac{3}{10} = \frac{15}{120} = \frac{1}{8}\]
+
+</p>
+  <p>
+
+\[\frac{7}{9} \times \frac{9}{14} = \frac{63}{126} = \frac{1}{2}\]
+
+</p>
+
+  <h4>10 Practice Examples</h4>
+  <p>
+
+\[\frac{3}{4} \times \frac{2}{5}\]
+
+ 
+    <button class="reveal-btn" onclick="reveal(this)">Reveal</button>
+    <span class="answer" style="display:none;">
+
+\[\frac{6}{20} = \frac{3}{10}\]
+
+</span>
+  </p>
+  <p>
+
+\[\frac{2}{7} \times \frac{3}{14}\]
+
+ 
+    <button class="reveal-btn" onclick="reveal(this)">Reveal</button>
+    <span class="answer" style="display:none;">
+
+\[\frac{6}{98} = \frac{3}{49}\]
+
+</span>
+  </p>
+  <p>
+
+\[\frac{5}{8} \times \frac{4}{9}\]
+
+ 
+    <button class="reveal-btn" onclick="reveal(this)">Reveal</button>
+    <span class="answer" style="display:none;">
+
+\[\frac{20}{72} = \frac{5}{18}\]
+
+</span>
+  </p>
+  <p>
+
+\[\frac{7}{10} \times \frac{3}{5}\]
+
+ 
+    <button class="reveal-btn" onclick="reveal(this)">Reveal</button>
+    <span class="answer" style="display:none;">
+
+\[\frac{21}{50}\]
+
+</span>
+  </p>
+  <p>
+
+\[\frac{9}{12} \times \frac{2}{3}\]
+
+ 
+    <button class="reveal-btn" onclick="reveal(this)">Reveal</button>
+    <span class="answer" style="display:none;">
+
+\[\frac{18}{36} = \frac{1}{2}\]
+
+</span>
+  </p>
+  <p>
+
+\[\frac{4}{11} \times \frac{2}{3}\]
+
+ 
+    <button class="reveal-btn" onclick="reveal(this)">Reveal</button>
+    <span class="answer" style="display:none;">
+
+\[\frac{8}{33}\]
+
+</span>
+  </p>
+  <p>
+
+\[\frac{6}{15} \times \frac{5}{9}\]
+
+ 
+    <button class="reveal-btn" onclick="reveal(this)">Reveal</button>
+    <span class="answer" style="display:none;">
+
+\[\frac{30}{135} = \frac{2}{9}\]
+
+</span>
+  </p>
+  <p>
+
+\[\frac{3}{16} \times \frac{4}{5}\]
+
+ 
+    <button class="reveal-btn" onclick="reveal(this)">Reveal</button>
+    <span class="answer" style="display:none;">
+
+\[\frac{12}{80} = \frac{3}{20}\]
+
+</span>
+  </p>
+  <p>
+
+\[\frac{2}{9} \times \frac{3}{7}\]
+
+ 
+    <button class="reveal-btn" onclick="reveal(this)">Reveal</button>
+    <span class="answer" style="display:none;">
+
+\[\frac{6}{63} = \frac{2}{21}\]
+
+</span>
+  </p>
+  <p>
+
+\[\frac{5}{12} \times \frac{7}{8}\]
+
+ 
+    <button class="reveal-btn" onclick="reveal(this)">Reveal</button>
+    <span class="answer" style="display:none;">
+
+\[\frac{35}{96}\]
+
+</span>
+  </p>
+  <!-- Part 4: Division -->
+  <h3>Part 4: Division of Fractions</h3>
+
+  <h4>10 Solved Examples</h4>
+  <p>
+
+\[\frac{1}{2} \div \frac{1}{3} = \frac{3}{2}\]
+
+</p>
+  <p>
+
+\[\frac{3}{4} \div \frac{2}{5} = \frac{15}{8}\]
+
+</p>
+  <p>
+
+\[\frac{5}{6} \div \frac{1}{2} = \frac{5}{3}\]
+
+</p>
+  <p>
+
+\[\frac{7}{8} \div \frac{7}{16} = 2\]
+
+</p>
+  <p>
+
+\[\frac{9}{10} \div \frac{3}{5} = \frac{3}{2}\]
+
+</p>
+  <p>
+
+\[\frac{2}{3} \div \frac{4}{9} = \frac{3}{2}\]
+
+</p>
+  <p>
+
+\[\frac{4}{5} \div \frac{2}{3} = \frac{6}{5}\]
+
+</p>
+  <p>
+
+\[\frac{3}{7} \div \frac{1}{14} = 6\]
+
+</p>
+  <p>
+
+\[\frac{5}{12} \div \frac{5}{6} = \frac{1}{2}\]
+
+</p>
+  <p>
+
+\[\frac{7}{9} \div \frac{7}{18} = 2\]
+
+</p>
+
+  <h4>10 Practice Examples</h4>
+  <p>
+
+\[\frac{2}{5} \div \frac{1}{10}\]
+
+ 
+    <button class="reveal-btn" onclick="reveal(this)">Reveal</button>
+    <span class="answer" style="display:none;">
+
+\[4\]
+
+</span>
+  </p>
+  <p>
+
+\[\frac{3}{8} \div \frac{1}{4}\]
+
+ 
+    <button class="reveal-btn" onclick="reveal(this)">Reveal</button>
+    <span class="answer" style="display:none;">
+
+\[\frac{3}{2}\]
+
+</span>
+  </p>
+  <p>
+
+\[\frac{5}{6} \div \frac{5}{12}\]
+
+ 
+    <button class="reveal-btn" onclick="reveal(this)">Reveal</button>
+    <span class="answer" style="display:none;">
+
+\[2\]
+
+</span>
+  </p>
+  <p>
+
+\[\frac{7}{10} \div \frac{7}{20}\]
+
+ 
+    <button class="reveal-btn" onclick="reveal(this)">Reveal</button>
+    <span class="answer" style="display:none;">
+
+\[2\]
+
+</span>
+  </p>
+  <p>
+
+\[\frac{9}{12} \div \frac{3}{4}\]
+
+ 
+    <button class="reveal-btn" onclick="reveal(this)">Reveal</button>
+    <span class="answer" style="display:none;">
+
+\[1\]
+
+</span>
+  </p>
+  <p>
+
+\[\frac{4}{9} \div \frac{2}{3}\]
+
+ 
+    <button class="reveal-btn" onclick="reveal(this)">Reveal</button>
+    <span class="answer" style="display:none;">
+
+\[\frac{2}{3}\]
+
+</span>
+  </p>
+  <p>
+
+\[\frac{5}{8} \div \frac{1}{16}\]
+
+ 
+    <button class="reveal-btn" onclick="reveal(this)">Reveal</button>
+    <span class="answer" style="display:none;">
+
+\[10\]
+
+</span>
+  </p>
+  <p>
+
+\[\frac{2}{7} \div \frac{1}{14}\]
+
+ 
+    <button class="reveal-btn" onclick="reveal(this)">Reveal</button>
+    <span class="answer" style="display:none;">
+
+\[4\]
+
+</span>
+  </p>
+  <p>
+
+\[\frac{3}{11} \div \frac{1}{22}\]
+
+ 
+    <button class="reveal-btn" onclick="reveal(this)">Reveal</button>
+    <span class="answer" style="display:none;">
+
+\[6\]
+
+</span>
+  </p>
+  <p>
+
+\[\frac{6}{15} \div \frac{2}{15}\]
+
+ 
+    <button class="reveal-btn" onclick="reveal(this)">Reveal</button>
+    <span class="answer" style="display:none;">
+
+\[3\]
+
+</span>
+  </p>
+
+</div>
+
+
+<script>
+function showContent(id) {
+  const sections = ['fractions-summary','fractions-exercises'];
+  sections.forEach(sec => {
+    document.getElementById(sec).style.display = 'none';
+  });
+  document.getElementById(id).style.display = 'block';
+}
+
+function reveal(btn) {
+  btn.nextElementSibling.style.display = "inline";
+}
+</script>
+
+</body>
+</html>
