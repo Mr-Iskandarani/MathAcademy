@@ -1,45 +1,624 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <meta charset="UTF-8">
-  <title>Grade 9 Worksheet</title>
+  <title>Grade 9 Math</title>
+  <!-- MathJax مكتبة لعرض الكسور والجذور والمعادلات -->
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 30px;
-      background-color: #f9f9f9;
-    }
-    h1 {
-      color: #0074D9;
-    }
-    pre {
-      background-color: #fff;
-      padding: 15px;
-      border: 1px solid #ccc;
+    .icon-button {
+      background-color: #2196F3;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      margin: 5px;
       border-radius: 5px;
-      white-space: pre-wrap;
-      font-size: 16px;
+      font-size: 14px;
+    }
+    .icon-button:hover {
+      background-color: #0b7dda;
+    }
+    .content {
+      padding: 10px;
+      background-color: #f9f9f9;
+      margin-top: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    .reveal-btn {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+      margin: 5px;
+      border-radius: 5px;
+      font-size: 12px;
+    }
+    .reveal-btn:hover {
+      background-color: #3e8e41;
     }
   </style>
 </head>
 <body>
-  <h1>Grade 9 - Real numbers</h1>
 
-  <pre>
-Exercise 1:
-In this problem, the unit of length is 1 cm.
-Given the three points A, B, and C such that:
-AB = √108, BC = √48, and AC = 10√3
+<!-- Chapter 1: Real Numbers -->
+<div class="chapter-card" style="text-align:center;">
+  <h2>📘 Chapter 1: Real Numbers</h2>
+  <div class="tab">
+    <button class="icon-button" onclick="showContent('real-summary')">📄 Summary</button>
+    <button class="icon-button" onclick="showContent('real-exercises')">📝 Exercises</button>
+  </div>
+</div>
 
-1) Calculate AB + BC giving the answer in the form a√3.
-2) Are the points A, B, and C collinear? Justify.
+<!-- Summary Section -->
+<div id="real-summary" class="content" style="display:none;">
+  <h2>Lesson Summary</h2>
+  <p><b>Rational Numbers:</b> Numbers that can be expressed as a fraction \(\frac{p}{q}\) where \(p, q \in \mathbb{Z}\) and \(q \neq 0\).</p>
+  <p><b>Irrational Numbers:</b> Numbers that cannot be expressed as a fraction, their decimal expansion is non-terminating and non-repeating (e.g. \(\pi, \sqrt{2}\)).</p>
+  <p><b>Properties of Square Roots:</b> 
+    \(\sqrt{a \cdot b} = \sqrt{a} \cdot \sqrt{b}\),  
+    \(\sqrt{\frac{a}{b}} = \frac{\sqrt{a}}{\sqrt{b}}\),  
+    \((\sqrt{a})^2 = a\).
+  </p>
+  <p><b>Scientific Notation:</b> A way of writing very large or very small numbers as \(m \times 10^n\) where \(1 \leq m < 10\) and \(n\) is an integer.</p>
+  <p><b>Rationalizing the Denominator:</b> Multiply numerator and denominator by a suitable radical to remove the root from the denominator.  
+    Example: \(\frac{1}{\sqrt{2}} = \frac{1}{\sqrt{2}} \cdot \frac{\sqrt{2}}{\sqrt{2}} = \frac{\sqrt{2}}{2}\).
+  </p>
+</div>
 
-Exercise 2:
-Given that:
-C = (√45 - √80 + 2√125) / (√7 × √35 - 7√5 + 3)
+<!-- Exercises Section -->
+<div id="real-exercises" class="content" style="display:none;">
+  <h2>Exercises</h2>
 
-Calculate C and give the result in the form a√5 where a is an integer.
-  </pre>
+  <!-- Part 1: Calculation of Radical of Perfect Squares -->
+  <h3>Part 1: Calculation of Radical of Perfect Squares</h3>
+
+  <h4>10 Solved Examples</h4>
+  <p>
+
+\[\sqrt{1} = 1\]
+
+</p>
+  <p>
+
+\[\sqrt{4} = 2\]
+
+</p>
+  <p>
+
+\[\sqrt{9} = 3\]
+
+</p>
+  <p>
+
+\[\sqrt{16} = 4\]
+
+</p>
+  <p>
+
+\[\sqrt{25} = 5\]
+
+</p>
+  <p>
+
+\[\sqrt{36} = 6\]
+
+</p>
+  <p>
+
+\[\sqrt{49} = 7\]
+
+</p>
+  <p>
+
+\[\sqrt{64} = 8\]
+
+</p>
+  <p>
+
+\[\sqrt{81} = 9\]
+
+</p>
+  <p>
+
+\[\sqrt{100} = 10\]
+
+</p>
+
+  <h4>10 Practice Examples</h4>
+  <p>
+
+\[\sqrt{121}\]
+
+ 
+    <button class="reveal-btn" onclick="reveal(this)">Reveal</button>
+    <span class="answer" style="display:none;">
+
+\[11\]
+
+</span>
+  </p>
+  <p>
+
+\[\sqrt{144}\]
+
+ 
+    <button class="reveal-btn" onclick="reveal(this)">Reveal</button>
+    <span class="answer" style="display:none;">
+
+\[12\]
+
+</span>
+  </p>
+  <p>
+
+\[\sqrt{169}\]
+
+ 
+    <button class="reveal-btn" onclick="reveal(this)">Reveal</button>
+    <span class="answer" style="display:none;">
+
+\[13\]
+
+</span>
+  </p>
+  <p>
+
+\[\sqrt{196}\]
+
+ 
+    <button class="reveal-btn" onclick="reveal(this)">Reveal</button>
+    <span class="answer" style="display:none;">
+
+\[14\]
+
+</span>
+  </p>
+  <p>
+
+\[\sqrt{225}\]
+
+ 
+    <button class="reveal-btn" onclick="reveal(this)">Reveal</button>
+    <span class="answer" style="display:none;">
+
+\[15\]
+
+</span>
+  </p>
+  <p>
+
+\[\sqrt{256}\]
+
+ 
+    <button class="reveal-btn" onclick="reveal(this)">Reveal</button>
+    <span class="answer" style="display:none;">
+
+\[16\]
+
+</span>
+  </p>
+  <p>
+
+\[\sqrt{289}\]
+
+ 
+    <button class="reveal-btn" onclick="reveal(this)">Reveal</button>
+    <span class="answer" style="display:none;">
+
+\[17\]
+
+</span>
+  </p>
+  <p>
+
+\[\sqrt{324}\]
+
+ 
+    <button class="reveal-btn" onclick="reveal(this)">Reveal</button>
+    <span class="answer" style="display:none;">
+
+\[18\]
+
+</span>
+  </p>
+  <p>
+
+\[\sqrt{361}\]
+
+ 
+    <button class="reveal-btn" onclick="reveal(this)">Reveal</button>
+    <span class="answer" style="display:none;">
+
+\[19\]
+
+</span>
+  </p>
+  <p>
+
+\[\sqrt{400}\]
+
+ 
+    <button class="reveal-btn" onclick="reveal(this)">Reveal</button>
+    <span class="answer" style="display:none;">
+
+\[20\]
+
+</span>
+  </p>
+    <!-- Part 2: Writing Expression in the Form a√b -->
+  <h3>Part 2: Writing Expression in the Form \(a\sqrt{b}\)</h3>
+
+  <h4>10 Solved Examples</h4>
+  <p>
+
+\[\sqrt{12} = 2\sqrt{3}\]
+
+</p>
+  <p>
+
+\[\sqrt{18} = 3\sqrt{2}\]
+
+</p>
+  <p>
+
+\[\sqrt{20} = 2\sqrt{5}\]
+
+</p>
+  <p>
+
+\[\sqrt{24} = 2\sqrt{6}\]
+
+</p>
+  <p>
+
+\[\sqrt{27} = 3\sqrt{3}\]
+
+</p>
+  <p>
+
+\[\sqrt{32} = 4\sqrt{2}\]
+
+</p>
+  <p>
+
+\[\sqrt{45} = 3\sqrt{5}\]
+
+</p>
+  <p>
+
+\[\sqrt{50} = 5\sqrt{2}\]
+
+</p>
+  <p>
+
+\[\sqrt{72} = 6\sqrt{2}\]
+
+</p>
+  <p>
+
+\[\sqrt{98} = 7\sqrt{2}\]
+
+</p>
+
+  <h4>10 Practice Examples</h4>
+  <p>
+
+\[\sqrt{75}\]
+
+ 
+    <button class="reveal-btn" onclick="reveal(this)">Reveal</button>
+    <span class="answer" style="display:none;">
+
+\[= 5\sqrt{3}\]
+
+</span>
+  </p>
+  <p>
+
+\[\sqrt{63}\]
+
+ 
+    <button class="reveal-btn" onclick="reveal(this)">Reveal</button>
+    <span class="answer" style="display:none;">
+
+\[= 3\sqrt{7}\]
+
+</span>
+  </p>
+  <p>
+
+\[\sqrt{48}\]
+
+ 
+    <button class="reveal-btn" onclick="reveal(this)">Reveal</button>
+    <span class="answer" style="display:none;">
+
+\[= 4\sqrt{3}\]
+
+</span>
+  </p>
+  <p>
+
+\[\sqrt{80}\]
+
+ 
+    <button class="reveal-btn" onclick="reveal(this)">Reveal</button>
+    <span class="answer" style="display:none;">
+
+\[= 4\sqrt{5}\]
+
+</span>
+  </p>
+  <p>
+
+\[\sqrt{108}\]
+
+ 
+    <button class="reveal-btn" onclick="reveal(this)">Reveal</button>
+    <span class="answer" style="display:none;">
+
+\[= 6\sqrt{3}\]
+
+</span>
+  </p>
+  <p>
+
+\[\sqrt{200}\]
+
+ 
+    <button class="reveal-btn" onclick="reveal(this)">Reveal</button>
+    <span class="answer" style="display:none;">
+
+\[= 10\sqrt{2}\]
+
+</span>
+  </p>
+  <p>
+
+\[\sqrt{147}\]
+
+ 
+    <button class="reveal-btn" onclick="reveal(this)">Reveal</button>
+    <span class="answer" style="display:none;">
+
+\[= 7\sqrt{3}\]
+
+</span>
+  </p>
+  <p>
+
+\[\sqrt{162}\]
+
+ 
+    <button class="reveal-btn" onclick="reveal(this)">Reveal</button>
+    <span class="answer" style="display:none;">
+
+\[= 9\sqrt{2}\]
+
+</span>
+  </p>
+  <p>
+
+\[\sqrt{242}\]
+
+ 
+    <button class="reveal-btn" onclick="reveal(this)">Reveal</button>
+    <span class="answer" style="display:none;">
+
+\[= 11\sqrt{2}\]
+
+</span>
+  </p>
+  <p>
+
+\[\sqrt{288}\]
+
+ 
+    <button class="reveal-btn" onclick="reveal(this)">Reveal</button>
+    <span class="answer" style="display:none;">
+
+\[= 12\sqrt{2}\]
+
+</span>
+  </p>
+    <!-- Part 3: Simplify Expressions in the Form a√b -->
+  <h3>Part 3: Simplify Expressions in the Form \(a\sqrt{b}\)</h3>
+
+  <h4>10 Solved Examples</h4>
+  <p>
+
+\[x = 4\sqrt{3} - \sqrt{12} + \sqrt{300} = 4\sqrt{3} - 2\sqrt{3} + 10\sqrt{3} = 12\sqrt{3}\]
+
+</p>
+  <p>
+
+\[y = 2\sqrt{5} + \sqrt{45} - \sqrt{80} = 2\sqrt{5} + 3\sqrt{5} - 4\sqrt{5} = \sqrt{5}\]
+
+</p>
+  <p>
+
+\[z = \sqrt{72} - \sqrt{18} + \sqrt{50} = 6\sqrt{2} - 3\sqrt{2} + 5\sqrt{2} = 8\sqrt{2}\]
+
+</p>
+  <p>
+
+\[w = \sqrt{98} + \sqrt{32} - \sqrt{8} = 7\sqrt{2} + 4\sqrt{2} - 2\sqrt{2} = 9\sqrt{2}\]
+
+</p>
+  <p>
+
+\[p = \sqrt{75} - \sqrt{27} + \sqrt{12} = 5\sqrt{3} - 3\sqrt{3} + 2\sqrt{3} = 4\sqrt{3}\]
+
+</p>
+  <p>
+
+\[q = \sqrt{63} + \sqrt{147} - \sqrt{27} = 3\sqrt{7} + 7\sqrt{3} - 3\sqrt{3} = 3\sqrt{7} + 4\sqrt{3}\]
+
+</p>
+  <p>
+
+\[r = \sqrt{200} - \sqrt{50} + \sqrt{18} = 10\sqrt{2} - 5\sqrt{2} + 3\sqrt{2} = 8\sqrt{2}\]
+
+</p>
+  <p>
+
+\[s = \sqrt{162} + \sqrt{72} - \sqrt{18} = 9\sqrt{2} + 6\sqrt{2} - 3\sqrt{2} = 12\sqrt{2}\]
+
+</p>
+  <p>
+
+\[t = \sqrt{288} - \sqrt{72} + \sqrt{8} = 12\sqrt{2} - 6\sqrt{2} + 2\sqrt{2} = 8\sqrt{2}\]
+
+</p>
+  <p>
+
+\[u = \sqrt{252} + \sqrt{63} - \sqrt{7} = 6\sqrt{7} + 3\sqrt{7} - \sqrt{7} = 8\sqrt{7}\]
+
+</p>
+
+  <h4>10 Practice Examples</h4>
+  <p>
+
+\[x = \sqrt{300} - \sqrt{12} + \sqrt{75}\]
+
+ 
+    <button class="reveal-btn" onclick="reveal(this)">Reveal</button>
+    <span class="answer" style="display:none;">
+
+\[= 10\sqrt{3} - 2\sqrt{3} + 5\sqrt{3} = 13\sqrt{3}\]
+
+</span>
+  </p>
+  <p>
+
+\[y = \sqrt{80} + \sqrt{45} - \sqrt{20}\]
+
+ 
+    <button class="reveal-btn" onclick="reveal(this)">Reveal</button>
+    <span class="answer" style="display:none;">
+
+\[= 4\sqrt{5} + 3\sqrt{5} - 2\sqrt{5} = 5\sqrt{5}\]
+
+</span>
+  </p>
+  <p>
+
+\[z = \sqrt{98} - \sqrt{50} + \sqrt{18}\]
+
+ 
+    <button class="reveal-btn" onclick="reveal(this)">Reveal</button>
+    <span class="answer" style="display:none;">
+
+\[= 7\sqrt{2} - 5\sqrt{2} + 3\sqrt{2} = 5\sqrt{2}\]
+
+</span>
+  </p>
+  <p>
+
+\[w = \sqrt{72} + \sqrt{32} - \sqrt{8}\]
+
+ 
+    <button class="reveal-btn" onclick="reveal(this)">Reveal</button>
+    <span class="answer" style="display:none;">
+
+\[= 6\sqrt{2} + 4\sqrt{2} - 2\sqrt{2} = 8\sqrt{2}\]
+
+</span>
+  </p>
+  <p>
+
+\[p = \sqrt{147} - \sqrt{27} + \sqrt{12}\]
+
+ 
+    <button class="reveal-btn" onclick="reveal(this)">Reveal</button>
+    <span class="answer" style="display:none;">
+
+\[= 7\sqrt{3} - 3\sqrt{3} + 2\sqrt{3} = 6\sqrt{3}\]
+
+</span>
+  </p>
+  <p>
+
+\[q = \sqrt{162} + \sqrt{72} - \sqrt{18}\]
+
+ 
+    <button class="reveal-btn" onclick="reveal(this)">Reveal</button>
+    <span class="answer" style="display:none;">
+
+\[= 9\sqrt{2} + 6\sqrt{2} - 3\sqrt{2} = 12\sqrt{2}\]
+
+</span>
+  </p>
+  <p>
+
+\[r = \sqrt{405} - \sqrt{45} + \sqrt{20}\]
+
+ 
+    <button class="reveal-btn" onclick="reveal(this)">Reveal</button>
+    <span class="answer" style="display:none;">
+
+\[= 9\sqrt{5} - 3\sqrt{5} + 2\sqrt{5} = 8\sqrt{5}\]
+
+</span>
+  </p>
+  <p>
+
+\[s = \sqrt{500} + \sqrt{80} - \sqrt{20}\]
+
+ 
+    <button class="reveal-btn" onclick="reveal(this)">Reveal</button>
+    <span class="answer" style="display:none;">
+
+\[= 10\sqrt{5} + 4\sqrt{5} - 2\sqrt{5} = 12\sqrt{5}\]
+
+</span>
+  </p>
+  <p>
+
+\[t = \sqrt{648} - \sqrt{162} + \sqrt{18}\]
+
+ 
+    <button class="reveal-btn" onclick="reveal(this)">Reveal</button>
+    <span class="answer" style="display:none;">
+
+\[= 18\sqrt{2} - 9\sqrt{2} + 3\sqrt{2} = 12\sqrt{2}\]
+
+</span>
+  </p>
+  <p>
+
+\[u = \sqrt{720} + \sqrt{180} - \sqrt{45}\]
+
+ 
+    <button class="reveal-btn" onclick="reveal(this)">Reveal</button>
+    <span class="answer" style="display:none;">
+
+\[= 12\sqrt{5} + 6\sqrt{5} - 3\sqrt{5} = 15\sqrt{5}\]
+
+</span>
+  </p>
+
+
+</div>
+
+<script>
+function showContent(id) {
+  const sections = ['real-summary','real-exercises'];
+  sections.forEach(sec => {
+    document.getElementById(sec).style.display = 'none';
+  });
+  document.getElementById(id).style.display = 'block';
+}
+
+function reveal(btn) {
+  btn.nextElementSibling.style.display = "inline";
+}
+</script>
 
 </body>
 </html>
