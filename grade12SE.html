@@ -2,11 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Grade 12 Math - Chap1. Statistics in Two Variables</title>
-  <!-- MathJax مكتبة لعرض المعادلات -->
-  <script id="MathJax-script" async
-    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-  </script>
+  <title>Grade 12 Math</title>
   <style>
     body { text-align: left; font-family: Arial, sans-serif; }
     .icon-button {
@@ -48,35 +44,64 @@
 </head>
 <body>
 
+<!-- ================= Chap1: Statistics in Two Variables ================= -->
+
 <div class="chapter-card" style="text-align:center;">
   <h2>📘 Chap1: Statistics in Two Variables</h2>
   <div class="tab">
-    <button class="icon-button" onclick="showContent('course')">📄 Course</button>
-    <button class="icon-button" onclick="showContent('exercises')">📝 Exercises</button>
+    <button class="icon-button" onclick="showContent('course1')">📄 Course</button>
+    <button class="icon-button" onclick="showContent('practice1')">📝 Practice</button>
   </div>
 </div>
 
-<!-- Course Section -->
-<div id="course" class="content" style="display:none;">
+<div id="course1" class="content" style="display:none;">
   <h2>Course PDF</h2>
-  <iframe src="Statistics in two variables.pdf"></iframe>
-  <a href="Statistics in two variables.pdf" download class="download-btn">⬇ Download Course</a>
+  <iframe src="chap1.statisticsintwovariables/Statisticsintwovariablescourse.pdf"></iframe>
+  <a href="chap1.statisticsintwovariables/Statisticsintwovariablescourse.pdf" download class="download-btn">⬇ Download Course</a>
 </div>
 
-<!-- Exercises Section -->
-<div id="exercises" class="content" style="display:none;">
-  <h2>Exercises PDF</h2>
-  <iframe src="Work Sheet Statistics in two variables .pdf"></iframe>
-  <a href="Work Sheet Statistics in two variables .pdf" download class="download-btn">⬇ Download Exercises</a>
+<div id="practice1" class="content" style="display:none;">
+  <h2>Practice PDF</h2>
+  <iframe src="chap1.statisticsintwovariables/Statisticsintwovariablespractice.pdf"></iframe>
+  <a href="chap1.statisticsintwovariables/Statisticsintwovariablespractice.pdf" download class="download-btn">⬇ Download Practice</a>
 </div>
+
+<!-- ================= Chap2: Rational Functions ================= -->
+
+<div class="chapter-card" style="text-align:center; margin-top:40px;">
+  <h2>📘 Chap2: Rational Functions</h2>
+  <div class="tab">
+    <button class="icon-button" onclick="showContent('course2')">📄 Course</button>
+    <button class="icon-button" onclick="showContent('practice2')">📝 Practice</button>
+  </div>
+</div>
+
+<div id="course2" class="content" style="display:none;">
+  <h2>Course PDF</h2>
+  <iframe src="chap2.Rationalfunctions/Rationalfunctionscourse.pdf"></iframe>
+  <a href="chap2.Rationalfunctions/Rationalfunctionscourse.pdf" download class="download-btn">⬇ Download Course</a>
+</div>
+
+<div id="practice2" class="content" style="display:none;">
+  <h2>Practice PDF</h2>
+  <iframe src="chap2.Rationalfunctions/Rationalfunctionspractice.pdf"></iframe>
+  <a href="chap2.Rationalfunctions/Rationalfunctionspractice.pdf" download class="download-btn">⬇ Download Practice</a>
+</div>
+
+<!-- ================= Script ================= -->
 
 <script>
 function showContent(id) {
-  const sections = ['course','exercises'];
+  const sections = [
+    'course1','practice1',   // Chap1
+    'course2','practice2'    // Chap2
+  ];
   sections.forEach(sec => {
-    document.getElementById(sec).style.display = 'none';
+    const el = document.getElementById(sec);
+    if (el) el.style.display = 'none';
   });
-  document.getElementById(id).style.display = 'block';
+  const target = document.getElementById(id);
+  if (target) target.style.display = 'block';
 }
 </script>
 
