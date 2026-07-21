@@ -1,109 +1,111 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Grade 12 Math</title>
+  <title>Be Genius in Mathematics</title>
   <style>
-    body { text-align: left; font-family: Arial, sans-serif; }
-    .icon-button {
-      background-color: #2196F3;
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      background: linear-gradient(to right, #0074D9, #7FDBFF);
+      color: #333;
+    }
+    header {
+      background-color: #001f3f;
       color: white;
-      border: none;
-      padding: 10px 20px;
-      cursor: pointer;
-      margin: 5px;
-      border-radius: 5px;
-      font-size: 14px;
+      padding: 40px;
+      text-align: center;
     }
-    .icon-button:hover { background-color: #0b7dda; }
-    .content {
-      padding: 10px;
-      background-color: #f9f9f9;
+    header h1 {
+      margin: 0;
+      font-size: 40px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    header p {
       margin-top: 10px;
-      border: 1px solid #ddd;
-      border-radius: 5px;
-      text-align: left;
+      font-size: 22px;
+      font-style: italic;
+      color: #7FDBFF;
     }
-    iframe {
-      width: 100%;
-      height: 600px;
-      border: none;
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 30px;
     }
-    .download-btn {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 8px 15px;
-      background-color: #4CAF50;
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      margin: 15px;
+      width: 250px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    .card h2 {
+      background-color: #0074D9;
       color: white;
+      padding: 15px;
+      margin: 0;
+      border-radius: 10px 10px 0 0;
+    }
+    .card a {
+      display: block;
+      padding: 20px;
       text-decoration: none;
-      border-radius: 5px;
-      font-size: 14px;
+      color: #0074D9;
+      font-weight: bold;
     }
-    .download-btn:hover { background-color: #3e8e41; }
+    .card a:hover {
+      color: #001f3f;
+    }
   </style>
 </head>
 <body>
 
-<!-- ================= Chap1: Statistics in Two Variables ================= -->
+<header>
+  <h1>Be Genius in Mathematics</h1>
+  <p>with Mohieddeen Iskandarani</p>
+</header>
 
-<div class="chapter-card" style="text-align:center;">
-  <h2>📘 Chap1: Statistics in Two Variables</h2>
-  <div class="tab">
-    <button class="icon-button" onclick="showContent('course1')">📄 Course</button>
-    <button class="icon-button" onclick="showContent('practice1')">📝 Practice</button>
+<div class="container">
+  <div class="card">
+    <h2>Grade 7</h2>
+    <a href="grade7.html">Open Lessons</a>
+  </div>
+  <div class="card">
+    <h2>Grade 8</h2>
+    <a href="grade8.html">Open Lessons</a>
+  </div>
+  <div class="card">
+    <h2>Grade 9</h2>
+    <a href="grade9.html">Open Lessons</a>
+  </div>
+  <div class="card">
+    <h2>Grade 10</h2>
+    <a href="grade10.html">Open Lessons</a>
+  </div>
+  <div class="card">
+    <h2>Grade 11 Scientific</h2>
+    <a href="grade11S.html">Open Lessons</a>
+  </div>
+  <div class="card">
+    <h2>Grade 11 Socio-Economic</h2>
+    <a href="grade11SE.html">Open Lessons</a>
+  </div>
+  <div class="card">
+    <h2>Grade 12 Life Sciences</h2>
+    <a href="grade12LS.html">Open Lessons</a>
+  </div>
+  <div class="card">
+    <h2>Grade 12 Socio-Economic</h2>
+    <a href="grade12SE.html">Open Lessons</a>
   </div>
 </div>
-
-<div id="course1" class="content" style="display:none;">
-  <h2>Course PDF</h2>
-  <iframe src="chap1.Statisticsintwovariables/Statisticsintwovariablescourse.pdf"></iframe>
-  <a href="chap1.Statisticsintwovariables/Statisticsintwovariablescourse.pdf" download class="download-btn">⬇ Download Course</a>
-</div>
-
-<div id="practice1" class="content" style="display:none;">
-  <h2>Practice PDF</h2>
-  <iframe src="chap1.Statisticsintwovariables/Statisticsintwovariablespractice.pdf"></iframe>
-  <a href="chap1.Statisticsintwovariables/Statisticsintwovariablespractice.pdf" download class="download-btn">⬇ Download Practice</a>
-</div>
-
-<!-- ================= Chap2: Rational Functions ================= -->
-
-<div class="chapter-card" style="text-align:center; margin-top:40px;">
-  <h2>📘 Chap2: Rational Functions</h2>
-  <div class="tab">
-    <button class="icon-button" onclick="showContent('course2')">📄 Course</button>
-    <button class="icon-button" onclick="showContent('practice2')">📝 Practice</button>
-  </div>
-</div>
-
-<div id="course2" class="content" style="display:none;">
-  <h2>Course PDF</h2>
-  <iframe src="chap2.Rationalfunctions/Rationalfunctionscourse.pdf"></iframe>
-  <a href="chap2.Rationalfunctions/Rationalfunctionscourse.pdf" download class="download-btn">⬇ Download Course</a>
-</div>
-
-<div id="practice2" class="content" style="display:none;">
-  <h2>Practice PDF</h2>
-  <iframe src="chap2.Rationalfunctions/Rationalfunctionspractice.pdf"></iframe>
-  <a href="chap2.Rationalfunctions/Rationalfunctionspractice.pdf" download class="download-btn">⬇ Download Practice</a>
-</div>
-
-<!-- ================= Script ================= -->
-
-<script>
-function showContent(id) {
-  const sections = [
-    'course1','practice1',   // Chap1
-    'course2','practice2'    // Chap2
-  ];
-  sections.forEach(sec => {
-    const el = document.getElementById(sec);
-    if (el) el.style.display = 'none';
-  });
-  const target = document.getElementById(id);
-  if (target) target.style.display = 'block';
-}
-</script>
 
 </body>
 </html>
