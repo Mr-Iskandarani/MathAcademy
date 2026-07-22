@@ -2,9 +2,13 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Grade 12 Math</title>
+  <title>Grade 12 Lessons</title>
   <style>
-    body { text-align: left; font-family: Arial, sans-serif; }
+    body { font-family: Arial, sans-serif; text-align: center; background-color: #f0f8ff; }
+    h1 { background-color: #003366; color: white; padding: 20px; }
+    .tab {
+      margin: 20px;
+    }
     .icon-button {
       background-color: #2196F3;
       color: white;
@@ -29,73 +33,49 @@
       height: 600px;
       border: none;
     }
-    .download-btn {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 8px 15px;
-      background-color: #4CAF50;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      font-size: 14px;
-    }
-    .download-btn:hover { background-color: #3e8e41; }
   </style>
 </head>
 <body>
 
-<!-- ================= Chap1: Statistics ================= -->
+<h1>Grade 12 Mathematics</h1>
 
-<div class="chapter-card" style="text-align:center;">
-  <h2>📘 Chap1: Statistics</h2>
-  <div class="tab">
-    <button class="icon-button" onclick="showContent('course1')">📄 Course</button>
-    <button class="icon-button" onclick="showContent('practice1')">📝 Practice</button>
-  </div>
+<!-- ================= Statistics ================= -->
+<div class="tab">
+  <h2>📘 Statistics</h2>
+  <button class="icon-button" onclick="showContent('statc')">📄 Course</button>
+  <button class="icon-button" onclick="showContent('statp')">📝 Exercises</button>
 </div>
 
-<div id="course1" class="content" style="display:none;">
-  <h2>Course PDF</h2>
-  <iframe src="chap1statistics/statisticscourse.pdf"></iframe>
-  <a href="chap1statistics/statisticscourse.pdf" download class="download-btn">⬇ Download Course</a>
+<div id="statc" class="content" style="display:none;">
+  <h3>Statistics Course</h3>
+  <iframe src="stat/statc.pdf"></iframe>
 </div>
 
-<div id="practice1" class="content" style="display:none;">
-  <h2>Practice PDF</h2>
-  <iframe src="chap1statistics/statisticspractice.pdf"></iframe>
-  <a href="chap1statistics/statisticspractice.pdf" download class="download-btn">⬇ Download Practice</a>
+<div id="statp" class="content" style="display:none;">
+  <h3>Statistics Exercises</h3>
+  <iframe src="stat/statp.pdf"></iframe>
 </div>
 
-<!-- ================= Chap2: Rational Functions ================= -->
-
-<div class="chapter-card" style="text-align:center; margin-top:40px;">
-  <h2>📘 Chap2: Rational Functions</h2>
-  <div class="tab">
-    <button class="icon-button" onclick="showContent('course2')">📄 Course</button>
-    <button class="icon-button" onclick="showContent('practice2')">📝 Practice</button>
-  </div>
+<!-- ================= Rational Functions ================= -->
+<div class="tab">
+  <h2>📘 Rational Functions</h2>
+  <button class="icon-button" onclick="showContent('rfc')">📄 Course</button>
+  <button class="icon-button" onclick="showContent('rfp')">📝 Exercises</button>
 </div>
 
-<div id="course2" class="content" style="display:none;">
-  <h2>Course PDF</h2>
-  <iframe src="chap2rationalfunctions/rationalcourse.pdf"></iframe>
-  <a href="chap2rationalfunctions/rationalcourse.pdf" download class="download-btn">⬇ Download Course</a>
+<div id="rfc" class="content" style="display:none;">
+  <h3>Rational Functions Course</h3>
+  <iframe src="rf/rfc.pdf"></iframe>
 </div>
 
-<div id="practice2" class="content" style="display:none;">
-  <h2>Practice PDF</h2>
-  <iframe src="chap2rationalfunctions/rationalpractice.pdf"></iframe>
-  <a href="chap2rationalfunctions/rationalpractice.pdf" download class="download-btn">⬇ Download Practice</a>
+<div id="rfp" class="content" style="display:none;">
+  <h3>Rational Functions Exercises</h3>
+  <iframe src="rf/rfp.pdf"></iframe>
 </div>
-
-<!-- ================= Script ================= -->
 
 <script>
 function showContent(id) {
-  const sections = [
-    'course1','practice1',   // Chap1
-    'course2','practice2'    // Chap2
-  ];
+  const sections = ['statc','statp','rfc','rfp'];
   sections.forEach(sec => {
     const el = document.getElementById(sec);
     if (el) el.style.display = 'none';
