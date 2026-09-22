@@ -85,3 +85,92 @@ function showContent(id) {
 
 </body>
 </html>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Chap3: Exponential Functions</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #f0f8ff; text-align:center; }
+    h2 { color:#003366; }
+    .tab { margin: 20px; }
+    .icon-button {
+      background-color: #2196F3;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      margin: 5px;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+    .icon-button:hover { background-color: #0b7dda; }
+    .content {
+      padding: 20px;
+      background-color: #f9f9f9;
+      margin: 20px auto;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      width: 80%;
+      text-align:left;
+    }
+    iframe {
+      width: 100%;
+      height: 600px;
+      border: none;
+    }
+    .download-link {
+      display:inline-block;
+      margin-top:10px;
+      padding:8px 15px;
+      background-color:#28a745;
+      color:white;
+      text-decoration:none;
+      border-radius:5px;
+    }
+    .download-link:hover { background-color:#1e7e34; }
+  </style>
+</head>
+<body>
+
+<!-- ================= Chap3: Exponential Functions ================= -->
+<div class="tab">
+  <h2>📘 Chap3: Exponential Functions</h2>
+  <button class="icon-button" onclick="showContent('expc')">📄 Course</button>
+  <button class="icon-button" onclick="showContent('exercises')">📝 Exercises</button>
+</div>
+
+<div id="expc" class="content" style="display:none;">
+  <h3>Exponential Functions Course</h3>
+  <iframe src="exp/expc.pdf"></iframe>
+  <br>
+  <a href="exp/expc.pdf" download class="download-link">⬇️ Download Course PDF</a>
+</div>
+
+<div id="exercises" class="content" style="display:none;">
+  <h3>Exponential Functions Exercises</h3>
+  <iframe src="exp/expp1.pdf"></iframe>
+  <br>
+  <a href="exp/expp1.pdf" download class="download-link">⬇️ Download Exercises PDF 1</a>
+  <br><br>
+  <iframe src="exp/expp2.pdf"></iframe>
+  <br>
+  <a href="exp/expp2.pdf" download class="download-link">⬇️ Download Exercises PDF 2</a>
+</div>
+
+<script>
+function showContent(id) {
+  const sections = ['expc','exercises'];
+  sections.forEach(sec => {
+    const el = document.getElementById(sec);
+    if (el) el.style.display = 'none';
+  });
+  const target = document.getElementById(id);
+  if (target) target.style.display = 'block';
+}
+</script>
+
+</body>
+</html>
+
+

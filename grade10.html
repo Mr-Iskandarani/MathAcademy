@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Grade 10 - Chap1: Powers and Radicals</title>
+  <!-- MathJax لتحويل المعادلات -->
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #f0f8ff; }
+    h1 { background-color: #003366; color: white; padding: 20px; text-align:center; }
+    h2 { color:#003366; }
+    .tab { text-align:center; margin:20px; }
+    .icon-button {
+      background-color: #2196F3;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      margin: 5px;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+    .icon-button:hover { background-color: #0b7dda; }
+    .content {
+      padding: 20px;
+      background-color: #f9f9f9;
+      margin: 20px auto;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      width: 80%;
+    }
+    .exercise { margin:15px 0; }
+    .answer { display:none; color:green; margin-top:5px; }
+    .reveal-btn {
+      background-color:#003366; color:white; border:none; padding:5px 10px;
+      border-radius:4px; cursor:pointer; font-size:12px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Grade 10 Mathematics</h1>
+
+<div class="tab">
+  <h2>📘 Chap1: Powers and Radicals</h2>
+  <button class="icon-button" onclick="showContent('course')">📄 Course</button>
+  <button class="icon-button" onclick="showContent('exercises')">📝 Exercises</button>
+</div>
+
+<!-- ===== COURSE ===== -->
+<div id="course" class="content" style="display:none;">
+  <h3>Course Content</h3>
+  <ol>
+    <li><b>Definition of powers of a real number:</b>  
+      For any real number \(a\) and integer \(n\):  
+      
+
+\[a^n = \underbrace{a \cdot a \cdot a \cdots a}_{n \text{ times}}\]
+
+  
+      If \(n=0\), then \(a^0 = 1\) (for \(a \neq 0\)).
+    </li>
+    <li><b>Powers with rational and irrational exponents:</b>  
+      For \(a > 0\) and rational exponent \(\frac{p}{q}\):  
+      
+
+\[a^{\frac{p}{q}} = \sqrt[q]{a^p}\]
+
+  
+      For irrational exponents, definition extends by limits.
+    </li>
+    <li><b>Properties of powers:</b>  
+      
+
+\[a^m \cdot a^n = a^{m+n}, \quad \frac{a^m}{a^n} = a^{m-n}, \quad (a^m)^n = a^{mn}, \quad (ab)^n = a^n b^n\]
+
+
+    </li>
+    <li><b>n-th root of a real number:</b>  
+      
+
+\[\sqrt[n]{a} = b \quad \text{iff} \quad b^n = a\]
+
+  
+      Properties: \(\sqrt[n]{ab} = \sqrt[n]{a}\sqrt[n]{b}\), \(\sqrt[n]{\frac{a}{b}} = \frac{\sqrt[n]{a}}{\sqrt[n]{b}}\).
+    </li>
+  </ol>
+</div>
+
+<!-- ===== EXERCISES ===== -->
+<div id="exercises" class="content" style="display:none;">
+  <h3>Exercises</h3>
+
+  <!-- Solved Examples -->
+  <h4>5 Solved Examples</h4>
+  <div class="exercise">Example 1: Simplify \(2^3\).  
+    <div class="answer" style="display:block;">Answer: \(2^3 = 8\).</div>
+  </div>
+  <div class="exercise">Example 2: Simplify \(9^{1/2}\).  
+    <div class="answer" style="display:block;">Answer: \(9^{1/2} = 3\).</div>
+  </div>
+  <div class="exercise">Example 3: Simplify \(27^{2/3}\).  
+    <div class="answer" style="display:block;">Answer: \(27^{2/3} = (27^{1/3})^2 = 3^2 = 9\).</div>
+  </div>
+  <div class="exercise">Example 4: Simplify \(\frac{a^5}{a^2}\).  
+    <div class="answer" style="display:block;">Answer: \(a^{5-2} = a^3\).</div>
+  </div>
+  <div class="exercise">Example 5: Simplify \((x^2)^3\).  
+    <div class="answer" style="display:block;">Answer: \(x^{2\cdot3} = x^6\).</div>
+  </div>
+
+  <!-- Practice Examples -->
+  <h4>5 Practice Examples</h4>
+  <div class="exercise">Practice 1: Simplify \(16^{1/2}\).  
+    <button class="reveal-btn" onclick="reveal(this)">Reveal Answer</button>
+    <div class="answer">Answer: 4</div>
+  </div>
+  <div class="exercise">Practice 2: Simplify \(8^{2/3}\).  
+    <button class="reveal-btn" onclick="reveal(this)">Reveal Answer</button>
+    <div class="answer">Answer: 4</div>
+  </div>
+  <div class="exercise">Practice 3: Simplify \(\frac{b^7}{b^3}\).  
+    <button class="reveal-btn" onclick="reveal(this)">Reveal Answer</button>
+    <div class="answer">Answer: \(b^4\)</div>
+  </div>
+  <div class="exercise">Practice 4: Simplify \((y^3)^2\).  
+    <button class="reveal-btn" onclick="reveal(this)">Reveal Answer</button>
+    <div class="answer">Answer: \(y^6\)</div>
+  </div>
+  <div class="exercise">Practice 5: Simplify \(\sqrt[3]{125}\).  
+    <button class="reveal-btn" onclick="reveal(this)">Reveal Answer</button>
+    <div class="answer">Answer: 5</div>
+  </div>
+</div>
+
+<script>
+function showContent(id) {
+  const sections = ['course','exercises'];
+  sections.forEach(sec => {
+    const el = document.getElementById(sec);
+    if (el) el.style.display = 'none';
+  });
+  const target = document.getElementById(id);
+  if (target) target.style.display = 'block';
+}
+
+function reveal(btn) {
+  const ans = btn.nextElementSibling;
+  ans.style.display = 'block';
+}
+</script>
+
+</body>
+</html>
