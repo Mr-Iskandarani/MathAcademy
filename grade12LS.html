@@ -31,94 +31,6 @@
       height: 600px;
       border: none;
     }
-  </style>
-</head>
-<body>
-
-<h1>Grade 12 Mathematics</h1>
-
-<!-- ================= Chap1: Continuous Function ================= -->
-<div class="tab">
-  <h2>📘 Chap1: Continuous Function over an Interval</h2>
-  <button class="icon-button" onclick="showContent('contifc')">📄 Course</button>
-  <button class="icon-button" onclick="showContent('contifp')">📝 Exercises</button>
-</div>
-
-<div id="contifc" class="content" style="display:none;">
-  <h3>Continuous Function Course</h3>
-  <iframe src="contif/contifc.pdf"></iframe>
-</div>
-
-<div id="contifp" class="content" style="display:none;">
-  <h3>Continuous Function Exercises</h3>
-  <iframe src="contif/contifp.pdf"></iframe>
-</div>
-
-<!-- ================= Chap2: Logarithmic Functions ================= -->
-<div class="tab">
-  <h2>📘 Chap2: Logarithmic Functions</h2>
-  <button class="icon-button" onclick="showContent('lnc')">📄 Course</button>
-  <button class="icon-button" onclick="showContent('lnp')">📝 Exercises</button>
-</div>
-
-<div id="lnc" class="content" style="display:none;">
-  <h3>Logarithmic Functions Course</h3>
-  <iframe src="ln/lnc.pdf"></iframe>
-</div>
-
-<div id="lnp" class="content" style="display:none;">
-  <h3>Logarithmic Functions Exercises</h3>
-  <iframe src="ln/lnp.pdf"></iframe>
-</div>
-
-<script>
-function showContent(id) {
-  const sections = ['contifc','contifp','lnc','lnp'];
-  sections.forEach(sec => {
-    const el = document.getElementById(sec);
-    if (el) el.style.display = 'none';
-  });
-  const target = document.getElementById(id);
-  if (target) target.style.display = 'block';
-}
-</script>
-
-</body>
-</html>
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>Chap3: Exponential Functions</title>
-  <style>
-    body { font-family: Arial, sans-serif; background-color: #f0f8ff; text-align:center; }
-    h2 { color:#003366; }
-    .tab { margin: 20px; }
-    .icon-button {
-      background-color: #2196F3;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      cursor: pointer;
-      margin: 5px;
-      border-radius: 5px;
-      font-size: 14px;
-    }
-    .icon-button:hover { background-color: #0b7dda; }
-    .content {
-      padding: 20px;
-      background-color: #f9f9f9;
-      margin: 20px auto;
-      border: 1px solid #ddd;
-      border-radius: 5px;
-      width: 80%;
-      text-align:left;
-    }
-    iframe {
-      width: 100%;
-      height: 600px;
-      border: none;
-    }
     .download-link {
       display:inline-block;
       margin-top:10px;
@@ -133,34 +45,74 @@ function showContent(id) {
 </head>
 <body>
 
+<h1>Grade 12 Mathematics</h1>
+
+<!-- ================= Chap1: Continuous Function ================= -->
+<div class="tab">
+  <h2>📘 Chap1: Continuous Function</h2>
+  <button class="icon-button" onclick="showContent('contifc')">📄 Course</button>
+  <button class="icon-button" onclick="showContent('contifp')">📝 Exercises</button>
+</div>
+<div id="contifc" class="content" style="display:none;">
+  <iframe src="contif/contifc.pdf"></iframe>
+  <a href="contif/contifc.pdf" download class="download-link">⬇️ Download Course PDF</a>
+</div>
+<div id="contifp" class="content" style="display:none;">
+  <iframe src="contif/contifp.pdf"></iframe>
+  <a href="contif/contifp.pdf" download class="download-link">⬇️ Download Exercises PDF</a>
+</div>
+
+<!-- ================= Chap2: Logarithmic Functions ================= -->
+<div class="tab">
+  <h2>📘 Chap2: Logarithmic Functions</h2>
+  <button class="icon-button" onclick="showContent('lnc')">📄 Course</button>
+  <button class="icon-button" onclick="showContent('lnp')">📝 Exercises</button>
+</div>
+<div id="lnc" class="content" style="display:none;">
+  <iframe src="ln/lnc.pdf"></iframe>
+  <a href="ln/lnc.pdf" download class="download-link">⬇️ Download Course PDF</a>
+</div>
+<div id="lnp" class="content" style="display:none;">
+  <iframe src="ln/lnp.pdf"></iframe>
+  <a href="ln/lnp.pdf" download class="download-link">⬇️ Download Exercises PDF</a>
+</div>
+
 <!-- ================= Chap3: Exponential Functions ================= -->
 <div class="tab">
   <h2>📘 Chap3: Exponential Functions</h2>
   <button class="icon-button" onclick="showContent('expc')">📄 Course</button>
-  <button class="icon-button" onclick="showContent('exercises')">📝 Exercises</button>
+  <button class="icon-button" onclick="showContent('expp')">📝 Exercises</button>
 </div>
-
 <div id="expc" class="content" style="display:none;">
-  <h3>Exponential Functions Course</h3>
   <iframe src="exp/expc.pdf"></iframe>
-  <br>
   <a href="exp/expc.pdf" download class="download-link">⬇️ Download Course PDF</a>
 </div>
-
-<div id="exercises" class="content" style="display:none;">
-  <h3>Exponential Functions Exercises</h3>
+<div id="expp" class="content" style="display:none;">
   <iframe src="exp/expp1.pdf"></iframe>
-  <br>
   <a href="exp/expp1.pdf" download class="download-link">⬇️ Download Exercises PDF 1</a>
   <br><br>
   <iframe src="exp/expp2.pdf"></iframe>
-  <br>
   <a href="exp/expp2.pdf" download class="download-link">⬇️ Download Exercises PDF 2</a>
+</div>
+
+<!-- ================= Chap4: Inverse Function ================= -->
+<div class="tab">
+  <h2>📘 Chap4: Inverse Function</h2>
+  <button class="icon-button" onclick="showContent('invc')">📄 Course</button>
+  <button class="icon-button" onclick="showContent('invp')">📝 Exercises</button>
+</div>
+<div id="invc" class="content" style="display:none;">
+  <iframe src="inv/invc.pdf"></iframe>
+  <a href="inv/invc.pdf" download class="download-link">⬇️ Download Course PDF</a>
+</div>
+<div id="invp" class="content" style="display:none;">
+  <iframe src="inv/invp.pdf"></iframe>
+  <a href="inv/invp.pdf" download class="download-link">⬇️ Download Exercises PDF</a>
 </div>
 
 <script>
 function showContent(id) {
-  const sections = ['expc','exercises'];
+  const sections = ['contifc','contifp','lnc','lnp','expc','expp','invc','invp'];
   sections.forEach(sec => {
     const el = document.getElementById(sec);
     if (el) el.style.display = 'none';
@@ -172,5 +124,3 @@ function showContent(id) {
 
 </body>
 </html>
-
-
