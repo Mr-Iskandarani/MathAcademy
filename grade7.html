@@ -28,6 +28,15 @@
 <header>
   <h1>Grade 7 - Chapter 1: Integers</h1>
 </header>
+<p>عدد زوار الموقع: <span id="visitorCount"></span></p>
+
+<script>
+fetch("counter.php")
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("visitorCount").innerText = data;
+  });
+</script>
 
 <!-- أيقونة رئيسية للـ Chapter -->
 <div class="chapter-card">
